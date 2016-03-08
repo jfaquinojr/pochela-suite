@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{638EF7AC-92F5-4503-8C6F-3CECD12BB080}</ProjectGuid>
+    <ProjectGuid>{46CA512F-6F0E-4F5B-9148-650EF5DEC48D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pochela.Inventory.Business</RootNamespace>
-    <AssemblyName>Pochela.Inventory.Business</AssemblyName>
+    <RootNamespace>Pochela.Inventory.Command</RootNamespace>
+    <AssemblyName>Pochela.Inventory.Command</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

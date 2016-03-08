@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Pochela.Inventory.DB")]
+[assembly: AssemblyTitle("Pochela.Inventory.Query")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("IBM")]
-[assembly: AssemblyProduct("Pochela.Inventory.DB")]
+[assembly: AssemblyProduct("Pochela.Inventory.Query")]
 [assembly: AssemblyCopyright("Copyright © IBM 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7aa2cf8b-f0c2-4779-bf61-2b73b25ecf7a")]
+[assembly: Guid("650ea581-514c-47ee-95b5-abcc4bba1d89")]
 
 // Version information for an assembly consists of the following four values:
 //

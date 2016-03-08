@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Pochela.Infrastructure
 {
-	public interface IQueryRepository<T> where T : BaseEntity
+	public interface IQueryRepository<T> where T : new()
 	{
 		T GetById<TKey>(TKey Id);
 		IEnumerable<T> Search(Expression<Func<T, bool>> criteria);
