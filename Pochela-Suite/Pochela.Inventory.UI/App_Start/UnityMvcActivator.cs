@@ -2,8 +2,9 @@ using System.Linq;
 using System.Web.Mvc;
 using Microsoft.Practices.Unity.Mvc;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Pochela.Inventory.UI.App_Start.UnityWebActivator), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(Pochela.Inventory.UI.App_Start.UnityWebActivator), "Shutdown")]
+//TODO: dont want to deal with Unity right now. Uncomment whenever youre ready, my future self.
+//[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Pochela.Inventory.UI.App_Start.UnityWebActivator), "Start")]
+//[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(Pochela.Inventory.UI.App_Start.UnityWebActivator), "Shutdown")]
 
 namespace Pochela.Inventory.UI.App_Start
 {
