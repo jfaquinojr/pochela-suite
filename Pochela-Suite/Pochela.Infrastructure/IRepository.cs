@@ -10,7 +10,8 @@ namespace Pochela.Infrastructure
 	public interface IQueryRepository<T> where T : new()
 	{
 		T GetById<TKey>(TKey Id);
-		IEnumerable<T> Search(Expression<Func<T, bool>> criteria);
+		IEnumerable<T> Search(string filter);
+		//IEnumerable<T> Search(Predicate<T>)
 	}
 
 	public interface ICommandRepository<T> where T : BaseEntity

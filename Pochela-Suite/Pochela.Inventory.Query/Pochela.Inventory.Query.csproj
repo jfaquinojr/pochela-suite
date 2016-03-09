@@ -34,6 +34,10 @@
       <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DapperExtensions, Version=1.4.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DapperExtensions.1.4.4\lib\net40\DapperExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -45,7 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Product.cs" />
+    <Compile Include="ConnectionFactory.cs" />
+    <Compile Include="Mapper\ProductionSchemaMapper.cs" />
     <Compile Include="ProductQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,9 +59,16 @@
       <Project>{c523251b-7dc0-4a28-a075-56d6418d6bf2}</Project>
       <Name>Pochela.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Pochela.Inventory.Entities\Pochela.Inventory.Entities.csproj">
+      <Project>{f0e54cf5-f0f6-4309-878a-f1dc49dabf23}</Project>
+      <Name>Pochela.Inventory.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
