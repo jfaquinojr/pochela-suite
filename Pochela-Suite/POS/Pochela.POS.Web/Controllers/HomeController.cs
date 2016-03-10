@@ -26,5 +26,11 @@ namespace Pochela.POS.Web.Controllers
 
 			return View();
 		}
+
+		#region JSON
+
+
+
+		#endregion
 	}
 }
