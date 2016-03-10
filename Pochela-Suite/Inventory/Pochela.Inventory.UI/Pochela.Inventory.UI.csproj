@@ -305,16 +305,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Pochela.Inventory.Entities\Pochela.Inventory.Entities.csproj">
-      <Project>{f0e54cf5-f0f6-4309-878a-f1dc49dabf23}</Project>
-      <Name>Pochela.Inventory.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Pochela.Inventory.Facade\Pochela.Inventory.Facade.csproj">
-      <Project>{8aad8150-1997-4d4f-a121-e2664999c22a}</Project>
-      <Name>Pochela.Inventory.Facade</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -3,21 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.UI", "Pochela.Inventory.UI\Pochela.Inventory.UI.csproj", "{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Infrastructure", "Pochela.Infrastructure\Pochela.Infrastructure.csproj", "{C523251B-7DC0-4A28-A075-56D6418D6BF2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inventory", "Inventory", "{1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F1219C43-2ECF-404B-9E03-42380DD4CA72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Query", "Pochela.Inventory.Query\Pochela.Inventory.Query.csproj", "{650EA581-514C-47EE-95B5-ABCC4BBA1D89}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POS", "POS", "{76DBDB83-1A68-4B91-BE98-18BCABEC5EE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Command", "Pochela.Inventory.Command\Pochela.Inventory.Command.csproj", "{46CA512F-6F0E-4F5B-9148-650EF5DEC48D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Infrastructure", "Infrastructure\Pochela.Infrastructure\Pochela.Infrastructure.csproj", "{C523251B-7DC0-4A28-A075-56D6418D6BF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Facade", "Pochela.Inventory.Facade\Pochela.Inventory.Facade.csproj", "{8AAD8150-1997-4D4F-A121-E2664999C22A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Command", "Inventory\Pochela.Inventory.Command\Pochela.Inventory.Command.csproj", "{46CA512F-6F0E-4F5B-9148-650EF5DEC48D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Entities", "Pochela.Inventory.Entities\Pochela.Inventory.Entities.csproj", "{F0E54CF5-F0F6-4309-878A-F1DC49DABF23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Entities", "Inventory\Pochela.Inventory.Entities\Pochela.Inventory.Entities.csproj", "{F0E54CF5-F0F6-4309-878A-F1DC49DABF23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Facade", "Inventory\Pochela.Inventory.Facade\Pochela.Inventory.Facade.csproj", "{8AAD8150-1997-4D4F-A121-E2664999C22A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.Query", "Inventory\Pochela.Inventory.Query\Pochela.Inventory.Query.csproj", "{650EA581-514C-47EE-95B5-ABCC4BBA1D89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.Inventory.UI", "Inventory\Pochela.Inventory.UI\Pochela.Inventory.UI.csproj", "{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pochela.POS.Web", "POS\Pochela.POS.Web\Pochela.POS.Web.csproj", "{8569B683-9D0A-45D9-9E9F-6C19C0CF3966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,40 +29,45 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C523251B-7DC0-4A28-A075-56D6418D6BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C523251B-7DC0-4A28-A075-56D6418D6BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C523251B-7DC0-4A28-A075-56D6418D6BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C523251B-7DC0-4A28-A075-56D6418D6BF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46CA512F-6F0E-4F5B-9148-650EF5DEC48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46CA512F-6F0E-4F5B-9148-650EF5DEC48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46CA512F-6F0E-4F5B-9148-650EF5DEC48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46CA512F-6F0E-4F5B-9148-650EF5DEC48D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F0E54CF5-F0F6-4309-878A-F1DC49DABF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0E54CF5-F0F6-4309-878A-F1DC49DABF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0E54CF5-F0F6-4309-878A-F1DC49DABF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0E54CF5-F0F6-4309-878A-F1DC49DABF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAD8150-1997-4D4F-A121-E2664999C22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650EA581-514C-47EE-95B5-ABCC4BBA1D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8569B683-9D0A-45D9-9E9F-6C19C0CF3966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8569B683-9D0A-45D9-9E9F-6C19C0CF3966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8569B683-9D0A-45D9-9E9F-6C19C0CF3966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8569B683-9D0A-45D9-9E9F-6C19C0CF3966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
 		{C523251B-7DC0-4A28-A075-56D6418D6BF2} = {F1219C43-2ECF-404B-9E03-42380DD4CA72}
-		{650EA581-514C-47EE-95B5-ABCC4BBA1D89} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
 		{46CA512F-6F0E-4F5B-9148-650EF5DEC48D} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
-		{8AAD8150-1997-4D4F-A121-E2664999C22A} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
 		{F0E54CF5-F0F6-4309-878A-F1DC49DABF23} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
+		{8AAD8150-1997-4D4F-A121-E2664999C22A} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
+		{650EA581-514C-47EE-95B5-ABCC4BBA1D89} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
+		{D358A768-2CA8-4C44-A42F-9F48EFFDB7CD} = {1DFE0AD8-0505-4525-ADBF-4DECD117DBBC}
+		{8569B683-9D0A-45D9-9E9F-6C19C0CF3966} = {76DBDB83-1A68-4B91-BE98-18BCABEC5EE5}
 	EndGlobalSection
 EndGlobal

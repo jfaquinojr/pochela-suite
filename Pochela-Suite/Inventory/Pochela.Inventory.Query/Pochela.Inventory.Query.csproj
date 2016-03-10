@@ -55,7 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pochela.Infrastructure\Pochela.Infrastructure.csproj">
+    <ProjectReference Include="..\..\Infrastructure\Pochela.Infrastructure\Pochela.Infrastructure.csproj">
       <Project>{c523251b-7dc0-4a28-a075-56d6418d6bf2}</Project>
       <Name>Pochela.Infrastructure</Name>
     </ProjectReference>
