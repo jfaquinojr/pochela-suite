@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pochela.POS.Entities
+namespace Pochela.POS.Db
 {
-    public class Class1
-    {
-    }
+	public class QueryProducts
+	{
+
+	}
 }
