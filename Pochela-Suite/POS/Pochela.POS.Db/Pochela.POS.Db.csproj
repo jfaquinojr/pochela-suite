@@ -43,12 +43,6 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Infrastructure\Pochela.Infrastructure\Pochela.Infrastructure.csproj">
-      <Project>{c523251b-7dc0-4a28-a075-56d6418d6bf2}</Project>
-      <Name>Pochela.Infrastructure</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
