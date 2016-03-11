@@ -43,6 +43,7 @@
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="Event.cs" />
+    <Compile Include="IConnectionFactory.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

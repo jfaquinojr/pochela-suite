@@ -53,6 +53,10 @@
       <Project>{c523251b-7dc0-4a28-a075-56d6418d6bf2}</Project>
       <Name>Pochela.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Pochela.POS.Entities\Pochela.POS.Entities.csproj">
+      <Project>{3d66ccff-22f9-41ab-b545-dba6fa71e919}</Project>
+      <Name>Pochela.POS.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
