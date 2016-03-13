@@ -9,7 +9,7 @@
 		<div class="col-md-10 col-lg-10">
 			<div class="row">
 				<div class="text-left">
-					<input ng-model="mainCtrl.ProductCode" type="text" class="input-lg" placeholder="enter product code" autofocus ng-keyup="$event.keyCode == 13 ? mainCtrl.KeyUp(mainCtrl.ProductCode) : null" />
+					<input id="TheProductCode" ng-model="mainCtrl.ProductCode" type="text" class="input-lg" placeholder="enter product code" autofocus ng-keyup="$event.keyCode == 13 ? mainCtrl.KeyUp(mainCtrl.ProductCode) : null" />
 				</div>
 			</div>
 			<p></p>
@@ -56,15 +56,69 @@
 	</div>
 	<div class="row">
 
-
+		xxx
 
 	</div>
+
+
+
+	<div id="modalBox" class="modal fade">
+		<div class="modal-dialog">
+			<form name="formCreateProduct" class="form-horizontal" ng-submit="mainCtrl.SubmitFormCreateProduct()">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>Product '{{mainCtrl.ProductCode}}' not found.</h4>
+						<span>Quick Create Product</span>
+					</div>
+					<div class="modal-body">
+
+						<div class="form-group">
+							<label class="col-md-4">Product Name</label>
+							<div class="col-md-8">
+								<input ng-model="ModelCreateProduct.ProductName" id="ProductName" type="text" class="form-control" required />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-4">Unit Price</label>
+							<div class="col-md-8">
+								<input ng-model="ModelCreateProduct.UnitPrice" id="UnitPrice" type="number" step="any" min="1" required class="form-control" />
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-success pull-left" id="btnCreateProduct" ng-disabled="!formCreateProduct.$valid"><i class="glyphicon glyphicon-plus-sign"></i> Create</button>
+						<button type="button" class="btn btn-default">Close</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
 </div>
+
+
+
 
 
 @section scripts
 {
 
-<script src="~/Scripts/apps/posmain.js"></script>
+	<script src="~/Scripts/apps/posmain.js"></script>
 	
+	<script>
+		$(document).ready(function () {
+			$('#modalBox').on('shown.bs.modal', function () {
+				$('#ProductName').focus();
+				$('#formCreateProduct input[type]').keyup(function (event) {
+					if (event.keyCode == 13) {
+						alert('boo yah!');
+					}
+				})
+			});
+		})
+
+	</script>
 }

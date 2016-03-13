@@ -44,6 +44,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -213,6 +218,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Pochela.POS.Db\Pochela.POS.Db.csproj">
+      <Project>{cb4a619f-1662-4c89-a1fe-abe4699acd4b}</Project>
+      <Name>Pochela.POS.Db</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pochela.POS.Entities\Pochela.POS.Entities.csproj">
       <Project>{3d66ccff-22f9-41ab-b545-dba6fa71e919}</Project>
       <Name>Pochela.POS.Entities</Name>

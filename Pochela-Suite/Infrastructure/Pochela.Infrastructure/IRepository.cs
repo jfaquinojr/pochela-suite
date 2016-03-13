@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Pochela.Infrastructure
 {
-	public interface IQueryRepository<T> where T : new()
+	public interface IQueryRepository<T> where T : class, new()
 	{
 		T GetById<TKey>(TKey Id);
 		IEnumerable<T> Search(string filter);
 		//IEnumerable<T> Search(Predicate<T>)
 	}
 
-	public interface ICommandRepository<T> where T : BaseEntity
+	public interface ICommandRepository<T> where T : class, new()
 	{
 		void Save(T model);
 		void Delete(T model);

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Pochela.Infrastructure;
 using Pochela.POS.Entities;
 using Dapper;
+using System.Configuration;
 
 namespace Pochela.POS.Db
 {
@@ -15,7 +16,7 @@ namespace Pochela.POS.Db
 
 		public QueryProducts()
 		{
-			
+			_connectionFactory = new SqlConnectionFactory(ConfigurationManager.ConnectionStrings["pochela"].ConnectionString);
 		}
 
 		public QueryProducts(IConnectionFactory connectionFactory)
@@ -36,7 +37,7 @@ namespace Pochela.POS.Db
 			return result.FirstOrDefault();
 		}
 
-		public IEnumerable<Product> Search(string code)
+		public IEnumerable<Product> GetByCode(string code)
 		{
 			IEnumerable<Product> result;
 			using (var cn = _connectionFactory.CreateConnection())
@@ -44,6 +45,19 @@ namespace Pochela.POS.Db
 				cn.Open();
 				var q = "select * from products where ProductCode = ?";
 				result = cn.Query<Product>(q, code);
+				cn.Close();
+			}
+
+			return result.ToList();
+		}
+		public IEnumerable<Product> Search(string filter)
+		{
+			IEnumerable<Product> result;
+			using (var cn = _connectionFactory.CreateConnection())
+			{
+				cn.Open();
+				var q = "select * from products where Name like '%' + @pValue + '%' or Description like '%' + @pValue + '%'";
+				result = cn.Query<Product>(q, new { pValue = filter });
 				cn.Close();
 			}
 
